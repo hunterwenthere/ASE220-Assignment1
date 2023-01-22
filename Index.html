@@ -1,10 +1,24 @@
- <!DOCTYPE html>
+<!--
+    * a navigation menu at the top.
+    a first section with your picture and a sentence that describes you professionally.
+    a second section containing your bio (one or two paragraphs) and highlighting your achievements.
+    a third section that summarizes your top 3 skills, using images and a short description.
+    a fourth section in which you share your hobbies and favorite activities (e.g., your favorite bands), using 4-8 images.
+    a fifth section that contains a contact form with the relevant fields for sending you a message (you are not required to have a working contact form, but the fields should be there).
+    a footer with your relevant contact information, including social links.
+-->
+
+
+<!DOCTYPE html>
 <html>
+
   <head>
     <title>Hunter Wentland</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
+
     <header>
       <nav class="navigation">
         <a class="active" href="#home">Home</a>
@@ -14,27 +28,92 @@
         <a href="#contact">Contact</a>
       </nav>
     </header>
+<!--
     <form>
       <input type = "email" name = "emailaddress"/>
       <button type = "submit">Submit</button>
     </form>
-    <article id = "firstarticle">
-      <h1>My new webpage</h1>
-      <span> An inline tag</span>
-      <span> An inline tag</span>
-      <p>My first paragraph.</p>
-      <figure>
-      </figure>
+-->
+
+    <article id = "professionalsummary">
+      <h1>About Me</h1>
       <table>
         <tr>
-          <td>This is a table cell</td>
-          <td>This is a table cell</td>
-          <td>This is a table cell</td>
-          <td>This is a table cell</td>
+          <td>
+            <Figure>
+              <img src="dog.jpg" alt="Hunter Wentland" width="300" height="300">
+              <figcaption>Hunter Wentland</figcaption>
+            </Figure>
+          </td>
+          <td>
+            <p>I am employed as an IT Specialist for a Chemical Manufacturing Company in Cininnati, OH, focusing on 
+              upgrading the software and database infrastructure on the production side of the business.
+              I am also enrolled as a student at Northern Kentucky University studying Infortmation Technology
+              with a focus in Cloud Administration, with a Minor in Computer Science.
+            </p>
+          </td>
         </tr>
       </table>
+      <figure>
+      </figure>
     </article>
+
+    <article id = "bio">
+      <h2>Biography</h2>
+      <p>
+
+      </p>
+    </article>
+
+    <article id = "skills">
+      <h2>Skills</h2>
+      <p>
+        
+      </p>
+    </article>
+
+    <article id = "hobbies">
+      <h2>Hobbies</h2>
+      <p>
+        
+      </p>
+    </article>
+
+    <article id = "contactform">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type = "text"><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type = "text"><br><br>
+        <label for="responsetype">Response Type:</label><br>
+        <label>
+          <input type="radio" name="choice" value="phone" /> Phone # 
+        </label><br>
+        <label>
+          <input type="radio" name="choice" value="phone" /> Email 
+        </label><br>
+        <label>
+          <input type="radio" name="choice" value="phone" /> Social Media 
+        </label><br><br>
+        <label for="responseaddress">Response to:</label><br>
+        <input type = "text"><br><br>
+        <label for="notes">Notes:</label><br>
+        <textarea rows="5" cols="60" name="notes" placeholder="Enter Notes"></textarea><br><br>
+        <input type = "submit"><br><br><br>
+      </form>
+    </article>
+
     <footer>
+      <span>
+        <img src = "linkedin.svg" alt = "LinkedIn">
+      </span>
+      <span>
+        <img src = "twitter.svg" alt = "Twitter">
+      </span>
+      <span>
+        <img src = "envelope-at.svg" alt = "Email">
+      </span>
     </footer>
   </body>
 </html> 
